@@ -3,7 +3,7 @@ definePageMeta({
     layout: 'products'
   })
 
-  const { data: products } = await useFetch('htpps://fakestoreapi.com/products')
+  const { data: products } = await useFetch('https://fakestoreapi.com/products')
 </script>
 
 <template>
