@@ -6,7 +6,7 @@
   <div>
     <header class="shadow-sm bg-white">
       <nav class="container mx-auto p-4 flex justify-between">
-         <NaxtLink to="/" class="font-bold  text-green-600">Nuxt Dojo</NaxtLink>
+         <NuxtLink to="/" class="font-bold  text-green-600">Nuxt Dojo</NuxtLink>
        
       <ul class="flex gap-4 text-lg justify-center">
         <li class="nav-item">
