@@ -9,11 +9,9 @@
 </script>
 
 <template>
-  <div>
-  <p>{{ product.title }}</p>
-  <p>{{ product.price }}</p>
-  <p>{{ product.id }}</p>
-  </div>
+ <div>
+  <ProductDetails :product="product" />
+ </div>
 </template>
 
 <style></style>
