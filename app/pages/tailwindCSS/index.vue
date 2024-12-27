@@ -1,7 +1,8 @@
 <script></script>
 
 <template>
-  <div>
+ <body class="text-gray-600">
+   <div>
     <div>
       <nav>
         <div>
@@ -10,7 +11,7 @@
           </h1>
         </div>
         <ul>
-          <li>
+          <li class="text-gray-700">
             <a href="#"></a>
             <span>Home</span>
           </li>
@@ -31,7 +32,7 @@
         <a href="#">Sign up</a>
       </div>
       <header>
-        <h2>Recipes</h2>
+        <h2 class="text-gray-700 text-6xl">Recipes</h2>
         <h3>For Ninjas</h3>
       </header>
 
@@ -54,6 +55,7 @@
       </div>
     </main>
   </div>
+</body> 
 </template>
 
 <style></style>
