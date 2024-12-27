@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script></script>
 
 <template>
   <div>
@@ -40,8 +39,8 @@
         <h4>Latest Recipes</h4>
         <div>
           <div>
-            <!-- <img src="img/stew.jpg" alt="stew"> -->
-            
+            <img src="/stew.jpg" alt="stew" />
+
             <div>
               <span>5 Bean Chilli Stew</span>
               <span>Recipe by Mario</span>
