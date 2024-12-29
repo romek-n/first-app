@@ -1,12 +1,18 @@
-<script></script>
+<script setup>
+definePageMeta({
+  layout: false,
+});
+</script>
 
 <template>
-  <div class="text-gray-600">
-    <div>
+  <div class="text-gray-600 grid md:grid-cols-3">
+    <div class="md:col-span-1">
       <nav>
         <div>
           <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-            <a href="/">Food ninja</a>
+            <a href="/" class="text-green-500 sm:text-red-500 lg:text-blue-500"
+              >Food ninja</a
+            >
           </h1>
         </div>
         <ul class="p-4">
@@ -25,11 +31,11 @@
         </ul>
       </nav>
     </div>
-    <main class="px-16 py-16">
-      <div class="text-red-400">
+    <main class="px-16 py-16 bg-gray-100 md:col-span-2">
+      <div class="text-red-400 flex justify-center md:justify-end">
         <a href="#">Log in</a>
-        &nbsp;
-        <a href="#">Sign up</a>
+
+        <a href="#" class="ml-2">Sign up</a>
       </div>
       <header>
         <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -40,16 +46,53 @@
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
           Latest Recipes
         </h4>
-        <div class="mt-8">
-          <div>
-            <img src="/img/stew.jpg" alt="stew" />
+        </div>
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+          <div class="card2">
+            <img
+              src="/img/curry.jpg"
+              alt="curry"
+              class="w-full h-32 sm:h-48 object-cover"
+            />
 
-            <div>
-              <span>5 Bean Chilli Stew</span>
-              <span>Recipe by Mario</span>
+            <div class="m-4">
+              <span class="font-bold text-lg">Tofu Curry</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
             </div>
           </div>
+          <div class="card2">
+            <img
+              src="/img/noodles.jpg"
+              alt="noodles"
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+
+            <div class="m-4">
+              <span class="font-bold text-lg">Veg Noodles</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
         </div>
+        <div class="card2">
+            <img
+              src="/img/stew.jpg"
+              alt="stew"
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+
+            <div class="m-4">
+              <span class="font-bold text-lg">5 Bean Chilli Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
+          </div>
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
           Most Popular
         </h4>
