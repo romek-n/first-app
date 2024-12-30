@@ -33,9 +33,9 @@ definePageMeta({
     </div>
     <main class="px-16 py-16 bg-gray-100 md:col-span-2">
       <div class="text-red-400 flex justify-center md:justify-end">
-        <a href="#">Log in</a>
+        <a href="#" class="btn border morder-2 shadow-md">Log in</a>
 
-        <a href="#" class="ml-2">Sign up</a>
+        <a href="#" class="ml-2 btn border morder-2 shadow-md">Sign up</a>
       </div>
       <header>
         <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -93,12 +93,11 @@ definePageMeta({
               <span>25 mins</span>
             </div>
           </div>
-        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+        <h4 class="font-bold mt-8 pb-2 border-b border-gray-200">
           Most Popular
         </h4>
-        <div class="mt-8"></div>
-        <div>
-          <div class="bg-pink-100 text-red-400">Load more</div>
+        <div class="mt-8">
+          <div class=" border morder-2 bg-pink-100 text-red-400 btn text-center shadow-sm">Load more</div>
         </div>
       </div>
     </main>
