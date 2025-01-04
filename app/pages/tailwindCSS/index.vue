@@ -3,7 +3,8 @@ definePageMeta({
   layout: false,
 });
 
-/* const burger = document.querySelector('#burger');
+onMounted(() => {
+const burger = document.querySelector('#burger');
 const menu = document.querySelector ('menu');
 
 burger.addEventListener('click',()=>{
@@ -12,7 +13,8 @@ burger.addEventListener('click',()=>{
   } else{
     menu.classList.add('hidden');
   }
-}) */
+})
+})
 </script>
 
 <template>
@@ -106,13 +108,13 @@ burger.addEventListener('click',()=>{
       <div class="text-red-400 flex justify-center md:justify-end">
         <a
           href="#"
-          class="btn border morder-2 shadow-md hover:bg-pink-500 hover:text-white"
+          class="btn border morder-2 shadow-md hover:bg-pink-500 hover:text-white transition ease-out duration-500"
           >Log in</a
         >
 
         <a
           href="#"
-          class="ml-2 btn border morder-2 shadow-md hover:bg-pink-500 hover:text-white"
+          class="ml-2 btn border morder-2 shadow-md hover:bg-pink-500 hover:text-white transition ease-out duration-500"
           >Sign up</a
         >
       </div>
@@ -220,7 +222,7 @@ burger.addEventListener('click',()=>{
         </h4>
         <div class="mt-8">
           <div
-            class="border morder-2 bg-pink-100 text-red-400 btn text-center shadow-sm hover:shadow-inner"
+            class="border morder-2 bg-pink-100 text-red-400 btn text-center shadow-sm hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
           >
             Load more
           </div>
