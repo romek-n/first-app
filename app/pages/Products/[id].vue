@@ -18,11 +18,12 @@ const { data: product } = await useFetch(uri, {
 
 <template>
   <div>
+
     <Head>
       <Title>Nuxt Dojo | {{ product.title }}</Title>
       <Meta name="description" :content="product.description" />
     </Head>
-    <ProductCard :product="product" />
+    <ProductDetails :product="product" />
   </div>
 </template>
 
